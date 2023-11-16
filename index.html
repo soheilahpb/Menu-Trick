@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="w-full 2xl:container mx-auto bg-[#F1F5F8]">
+    <!-- header -->
+    <header class=" py-10 flex items-center justify-center w-fit mx-auto">
+        <h1 class="relative after:absolute after:w-full after:h-[3px] after:-bottom-[4%] after:bg-[#C59D5F] w-full flex items-center justify-center capitalize text-5xl font-sans font-semibold">our menu</h1>
+    </header>
+    <!-- all section -->
+    <section class="tab relative">
+        <!-- buttons -->
+        <span class="buttons flex flex-wrap items-center justify-center">
+            <ul class="_select w-full md:w-2/3 flex flex-wrap px-6 list-none items-center justify-evenly my-7">
+                <li onclick="_menu(event)" data-title="all"
+                    class="cursor-pointer w-fit py-1 px-3 text-center text-lg border-[2px] border-solid border-[#C59D5F]  bg-[#C59D5F] text-white flex items-center justify-center capitalize rounded-md">
+                    all</li>
+                <li onclick="_menu(event)" data-title="breakfast"
+                    class="cursor-pointer w-fit py-1 px-3 text-center text-lg border-[2px] border-solid border-[#C59D5F]  text-[#C59D5F] flex items-center justify-center capitalize rounded-md">
+                    breakfast</li>
+                <li onclick="_menu(event)" data-title="lunch"
+                    class="cursor-pointer w-fit py-1 px-3 text-center text-lg border-[2px] border-solid border-[#C59D5F]  text-[#C59D5F] flex items-center justify-center capitalize rounded-md">
+                    lunch</li>
+                <li onclick="_menu(event)" data-title="shakes"
+                    class="cursor-pointer w-fit py-1 px-3 text-center text-lg border-[2px] border-solid border-[#C59D5F]  text-[#C59D5F] flex items-center justify-center capitalize rounded-md">
+                    shakes</li>
+                <li onclick="_menu(event)" data-title="dinner"
+                    class="cursor-pointer w-fit py-1 px-3 text-center text-lg border-[2px] border-solid border-[#C59D5F]  text-[#C59D5F] flex items-center justify-center capitalize rounded-md">
+                    dinner</li>
+            </ul>
+        </span>
+        <div id="all" class="absolute top-0 opacity-1 flex flex-wrap my-24 px-5 md:px-8 lg:px-10 xl:px-20 items-center">
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-1.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">Buttermilk Pancakes
+                    </h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$15.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">I'm baby woke mlkshk wolf bitters live-edge
+                        blue bottle, hammock freegan copper mug whatever cold-pressed</p>
+                </span>
+            </div>
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-2.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">Dinner Double</h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$13.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">vaporware iPhone mumblecore selvage raw denim
+                        slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats</p>
+                </span>
+            </div>
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-3.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">Godzilla Milkshake
+                    </h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$6.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">ombucha chillwave fanny pack 3 wolf moon
+                        street art photo booth before they sold out organic viral.</p>
+                </span>
+            </div>
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-4.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">Country Delight</h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$20.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">Shabby chic keffiyeh neutra snackwave pork
+                        belly shoreditch. Prism austin mlkshk truffaut,</p>
+                </span>
+            </div>
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-5.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">egg attack</h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$22.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">franzen vegan pabst bicycle rights
+                        kickstarter pinterest meditation farm-to-table 90's pop-up</p>
+                </span>
+            </div>
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-6.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">oreo dream</h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$18.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">Portland chicharrones ethical edison bulb,
+                        palo santo craft beer chia heirloom iPhone everyday</p>
+                </span>
+            </div>
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-7.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">Bacon overflow</h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$8.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">carry jianbing normcore freegan. Viral
+                        single-origin coffee live-edge, pork belly cloud bread iceland put a bird</p>
+                </span>
+            </div>
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-8.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">american classic
+                    </h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$12.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">on it tumblr kickstarter thundercats migas
+                        everyday carry squid palo santo leggings. Food truck truffaut</p>
+                </span>
+            </div>
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-9.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">Quarantine Buddy
+                    </h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$16.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">skateboard fam synth authentic semiotics.
+                        Live-edge lyft af, edison bulb yuccie crucifix microdosing.</p>
+                </span>
+            </div>
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-10.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">steak dinner</h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$39.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">skateboard fam synth authentic semiotics.
+                        Live-edge lyft af, edison bulb yuccie crucifix microdosing.</p>
+                </span>
+            </div>
+        </div>
+        <div id="breakfast"
+            class="absolute  top-0 opacity-0 flex flex-wrap my-24 px-5 md:px-8 lg:px-10 xl:px-20 items-center">
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-1.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">Buttermilk Pancakes
+                    </h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$15.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">I'm baby woke mlkshk wolf bitters live-edge
+                        blue bottle, hammock freegan copper mug whatever cold-pressed</p>
+                </span>
+            </div>
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-4.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">Country Delight</h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$20.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">Shabby chic keffiyeh neutra snackwave pork
+                        belly shoreditch. Prism austin mlkshk truffaut,</p>
+                </span>
+            </div>
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-7.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">Bacon overflow</h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$8.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">carry jianbing normcore freegan. Viral
+                        single-origin coffee live-edge, pork belly cloud bread iceland put a bird</p>
+                </span>
+            </div>
+        </div>
+        <div id="lunch"
+            class="absolute top-0 opacity-0 flex flex-wrap my-24 px-5 md:px-8 lg:px-10 xl:px-20 items-center">
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-2.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">Dinner Double</h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$13.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">vaporware iPhone mumblecore selvage raw denim
+                        slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats</p>
+                </span>
+            </div>
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-5.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">egg attack</h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$22.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">franzen vegan pabst bicycle rights
+                        kickstarter pinterest meditation farm-to-table 90's pop-up</p>
+                </span>
+            </div>
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-8.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">american classic
+                    </h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$12.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">on it tumblr kickstarter thundercats migas
+                        everyday carry squid palo santo leggings. Food truck truffaut</p>
+                </span>
+            </div>
+        </div>
+        <div id="shakes"
+            class="absolute top-0 opacity-0 flex flex-wrap my-24 px-5 md:px-8 lg:px-10 xl:px-20 items-center">
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-3.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">Godzilla Milkshake
+                    </h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$6.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">ombucha chillwave fanny pack 3 wolf moon
+                        street art photo booth before they sold out organic viral.</p>
+                </span>
+            </div>
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-6.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">oreo dream</h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$18.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">Portland chicharrones ethical edison bulb,
+                        palo santo craft beer chia heirloom iPhone everyday</p>
+                </span>
+            </div>
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-9.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">Quarantine Buddy
+                    </h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$16.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">skateboard fam synth authentic semiotics.
+                        Live-edge lyft af, edison bulb yuccie crucifix microdosing.</p>
+                </span>
+            </div>
+        </div>
+        <div id="dinner"
+            class="absolute top-0 opacity-0 flex flex-wrap my-24 px-5 md:px-8 lg:px-10 xl:px-20 items-center">
+            <div class="flex flex-wrap w-full md:w-1/2 justify-center md:justify-start items-center my-5">
+                <figure class="md:w-[225px] md:h-[175px] w-[400px] h-[200px] ">
+                    <img src="Images/item-10.jpeg" alt=""
+                        class="object-cover w-full h-full border-[4px] border-[#C59D5F] rounded-[8px]">
+                </figure>
+                <span class="w-full md:w-1/2 mx-4  flex flex-wrap">
+                    <h3 class="w-2/3  capitalize text-xl font-sans font-semibold tracking-wide">steak dinner</h3>
+                    <span
+                        class="w-1/3 text-xl text-right font-sans font-semibold text-[#C59D5F] tracking-wide">$39.99</span>
+                    <p class="w-full my-4 text-justify text-[#768899]">skateboard fam synth authentic semiotics.
+                        Live-edge lyft af, edison bulb yuccie crucifix microdosing.</p>
+                </span>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="JavaScript/master.js"></script>
+
+</html>
